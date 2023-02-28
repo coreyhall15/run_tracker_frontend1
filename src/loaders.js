@@ -1,16 +1,20 @@
-// YOUR DEPLOYED API BASE URL
-const URL = "localhost:3000"
+import url from "./url"
 
 //indexLoader => get all todos for index route
-export const indexLoader = async () => {
-    const response = await fetch(URL + "/runs/")
-    const runs = await response.json()
-    return runs
+export async function indexLoader() {
+    // send request to backend
+    const response = await fetch(url)
+
+    // get data from response
+    const data = await response.json()
+
+    // return data
+    return data
 }
 
-//showLoader => get a single todo for Show route
-export const showLoader = async ({params}) => {
-    const response = await fetch(URL + `/run/${params.id}/`)
-    const run = await response.json()
-    return run
+//showLoader => get a single todo for show route
+export async function showLoader({params}) {
+    const response = await fetch(url + params.id + "/")
+    const data = await response.json()
+    return data
 }
