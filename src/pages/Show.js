@@ -9,9 +9,10 @@ const Show = () => {
   ///////////////////
   const div = {
     textAlign: "center",
-    border: "3px solid green",
-    width: "80%",
-    margin: "30px auto",
+    fontWeight: "bold",
+    fontSize: "4rem",
+    color: "white",
+    backgroundColor: "teal"
   };
 
   return (

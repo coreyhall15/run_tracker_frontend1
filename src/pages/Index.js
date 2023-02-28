@@ -6,7 +6,7 @@ const Index = (props) => {
   const run = useLoaderData()
   // For each post in the array render a Post component
   return <>
-  <div style={{textAlign: "center"}}>
+  <div style={{textAlign: "center", backgroundColor: 'light teal', color: 'black', font: 'white'}}>
   <h2>Where Did You Run</h2>
   <Form action="/create" method="post">
       <input type="text" name="subject" placeholder="write LOCATION here"/>

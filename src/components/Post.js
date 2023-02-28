@@ -7,9 +7,10 @@ const Post = ({ post }) => {
   //////////////////
   const div = {
     textAlign: "center",
-    border: "3px solid",
+    //border: "3px solid green",
     margin: "10px auto",
     width: "80%",
+    //backgroundColor: "teal",
   };
   return (
     <div style={div}>
